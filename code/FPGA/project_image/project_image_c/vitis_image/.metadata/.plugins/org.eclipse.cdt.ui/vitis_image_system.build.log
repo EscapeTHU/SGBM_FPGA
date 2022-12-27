@@ -1,0 +1,10 @@
+20:09:24 **** Incremental Build of configuration Debug for project vitis_image_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50348 C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/design_sgbm_wrapper.xpfm standalone_psu_cortexa53_0 C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/design_sgbm_wrapper.xpfm --sys_config design_sgbm_wrapper --bif C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image_system/Debug/system.bif --bitstream C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit --elf C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Debug/vitis_image.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit
+Running C:/Xilinx/Vitis/2021.2/bin/bootgen -arch zynqmp -image C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+20:09:28 Build Finished (took 4s.819ms)
+

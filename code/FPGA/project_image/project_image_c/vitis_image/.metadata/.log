@@ -1,0 +1,1105 @@
+!SESSION 2022-12-22 11:34:20.153 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\zty\Desktop\xilinx_project\project_image\vitis_image\.metadata\.bak_0.log
+Created Time: 2022-12-22 20:06:30.483
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.483
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_ENABLED], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.485
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.485
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.487
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.487
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.489
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.489
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.490
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.490
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_FREQ], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.492
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_FREQ], Result: [null, 180000000]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.492
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.493
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_CPU_CLK_FREQ_HZ], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.494
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_cortexa53_0], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.495
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_cortexa53_0], Result: [null, axi_bram_ctrl_0 psu_acpu_gic psu_adma_0 psu_adma_1 psu_adma_2 psu_adma_3 psu_adma_4 psu_adma_5 psu_adma_6 psu_adma_7 psu_afi_0 psu_afi_1 psu_afi_2 psu_afi_3 psu_afi_4 psu_afi_5 psu_afi_6 psu_ams psu_apm_0 psu_apm_1 psu_apm_2 psu_apm_5 psu_apu psu_cci_gpv psu_cci_reg psu_coresight_0 psu_crf_apb psu_crl_apb psu_csu_0 psu_csudma psu_ctrl_ipi psu_ddr_0 psu_ddr_1 psu_ddr_phy psu_ddr_qos_ctrl psu_ddr_xmpu0_cfg psu_ddr_xmpu1_cfg psu_ddr_xmpu2_cfg psu_ddr_xmpu3_cfg psu_ddr_xmpu4_cfg psu_ddr_xmpu5_cfg psu_ddrc_0 psu_dp psu_dpdma psu_efuse psu_ethernet_3 psu_fpd_gpv psu_fpd_slcr psu_fpd_slcr_secure psu_fpd_xmpu_cfg psu_fpd_xmpu_sink psu_gdma_0 psu_gdma_1 psu_gdma_2 psu_gdma_3 psu_gdma_4 psu_gdma_5 psu_gdma_6 psu_gdma_7 psu_gpio_0 psu_i2c_0 psu_i2c_1 psu_iou_scntr psu_iou_scntrs psu_iousecure_slcr psu_iouslcr_0 psu_ipi_0 psu_lpd_slcr psu_lpd_slcr_secure psu_lpd_xppu psu_lpd_xppu_sink psu_mbistjtag psu_message_buffers psu_ocm psu_ocm_ram_0 psu_ocm_xmpu_cfg psu_pmu_global_0 psu_qspi_0 psu_qspi_linear_0 psu_r5_0_atcm_global psu_r5_0_btcm_global psu_r5_1_atcm_global psu_r5_1_btcm_global psu_r5_tcm_ram_global psu_rcpu_gic psu_rpu psu_rsa psu_rtc psu_sata psu_sd_1 psu_serdes psu_siou psu_smmu_gpv psu_smmu_reg psu_ttc_0 psu_ttc_1 psu_ttc_2 psu_ttc_3 psu_uart_0 psu_usb_0 psu_usb_xhci_0 psu_wdt_0 psu_wdt_1]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.495
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.498
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.498
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_S_AXI_BASEADDR], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_S_AXI_BASEADDR], Result: [null, 0xFD0B0000]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.499
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_ENABLE_PROFILE], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.500
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.501
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_ENABLE_ADVANCED], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.502
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.502
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_NUM_OF_COUNTERS], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.503
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_0 C_NUM_OF_COUNTERS], Result: [null, 10]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.503
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.505
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.506
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_S_AXI_BASEADDR], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.507
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_S_AXI_BASEADDR], Result: [null, 0xFFA00000]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.507
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_ENABLE_PROFILE], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.508
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.508
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_ENABLE_ADVANCED], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.510
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.510
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_NUM_OF_COUNTERS], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.511
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_1 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.512
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.514
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.514
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_S_AXI_BASEADDR], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.516
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_S_AXI_BASEADDR], Result: [null, 0xFFA10000]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.516
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_ENABLE_PROFILE], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.517
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.517
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_ENABLE_ADVANCED], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.519
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.519
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_NUM_OF_COUNTERS], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.520
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_2 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.521
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.523
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.523
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_S_AXI_BASEADDR], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.524
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_S_AXI_BASEADDR], Result: [null, 0xFD490000]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.525
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_ENABLE_PROFILE], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.526
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.526
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_ENABLE_ADVANCED], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.527
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.528
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_NUM_OF_COUNTERS], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.529
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_apm_5 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.529
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa zynq_ultra_ps_e_0 PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.531
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa zynq_ultra_ps_e_0 PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Result: [null, 249.997498]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.531
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.534
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#17]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.534
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.541
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.541
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.545
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.545
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.557
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.559
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.563
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.564
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.576
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.630
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.635
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.635
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.648
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.648
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.653
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.653
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.665
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.666
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.670
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.671
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.683
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.683
+!MESSAGE XSCT Command: [version -server], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.761
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.761
+!MESSAGE XSCT Command: [version], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.762
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.762
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.766
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.766
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.779
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.779
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.792
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level == 0}], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.793
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.794
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.794
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.795
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.796
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.807
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:30.808
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:31.193
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:31.194
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.211
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.218
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.222
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.222
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.235
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.235
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==0 && jtag_device_ctx=="jsn-ZCU208 FT4232H-832204143211A-147fb093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.258
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==0 && jtag_device_ctx=="jsn-ZCU208 FT4232H-832204143211A-147fb093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:34.259
+!MESSAGE XSCT Command: [fpga -file C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:53.987
+!MESSAGE XSCT command with result: [fpga -file C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:53.997
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.005
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.005
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.239
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, design_sgbm_wrapper_10]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.239
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.240
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.240
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.244
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.245
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.256
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.257
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.264
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.264
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.268
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.268
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.275
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:54.276
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:55.048
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:55.049
+!MESSAGE XSCT Command: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/boot/fsbl.elf], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:55.614
+!MESSAGE XSCT command with result: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:55.615
+!MESSAGE XSCT Command: [set bp_6_55_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:55.802
+!MESSAGE XSCT command with result: [set bp_6_55_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 3]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:06:55.803
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:04.851
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:04.852
+!MESSAGE XSCT Command: [bpremove $bp_6_55_fsbl_bp], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:04.866
+!MESSAGE XSCT command with result: [bpremove $bp_6_55_fsbl_bp], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:04.866
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:04.873
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:04.874
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:05.265
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:05.265
+!MESSAGE XSCT Command: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Release/vitis_image.elf], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:06.276
+!MESSAGE XSCT command with result: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Release/vitis_image.elf], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:06.277
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:06.441
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:06.635
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:06.643
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:06.644
+!MESSAGE XSCT Command: [con], Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:07:06.818
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-165: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:05.605
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss ], Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:05.609
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss ], Result: [null, ]. Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:05.609
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:05.611
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-22 20:09:05.611
+!MESSAGE Generating MD5 hash for file: C:\Users\zty\Desktop\xilinx_project\project_image\vitis_image\design_sgbm_wrapper\export\design_sgbm_wrapper\sw\design_sgbm_wrapper\standalone_psu_cortexa53_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:05.613
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:05.614
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Result: [null, ]. Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:23.401
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss ], Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:23.406
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss ], Result: [null, ]. Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:23.406
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:23.408
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-22 20:09:23.408
+!MESSAGE Generating MD5 hash for file: C:\Users\zty\Desktop\xilinx_project\project_image\vitis_image\design_sgbm_wrapper\export\design_sgbm_wrapper\sw\design_sgbm_wrapper\standalone_psu_cortexa53_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:23.410
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:23.411
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/system.mss], Result: [null, ]. Thread: Worker-155: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.789
+!MESSAGE XSCT Command: [disconnect tcfchan#17], Thread: Thread-1685
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.791
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_PROFILE_SIZE], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.792
+!MESSAGE XSCT command with result: [disconnect tcfchan#17], Result: [null, ]. Thread: Thread-1685
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.793
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa psu_pmu_0 C_DEBUG_PROFILE_SIZE], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.808
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.812
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#20]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.812
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.819
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.820
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.823
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.824
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.836
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.838
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.842
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.842
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.854
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.872
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.877
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.877
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.889
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.890
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.898
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.898
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.910
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.911
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.915
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.915
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.927
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:32.927
+!MESSAGE XSCT Command: [version -server], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.028
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.028
+!MESSAGE XSCT Command: [version], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.029
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.029
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.033
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.033
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.045
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.045
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.057
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level == 0}], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.057
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.058
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.059
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.060
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.060
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.071
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.071
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.460
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:33.460
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.467
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.475
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.479
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.479
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.492
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.492
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==0 && jtag_device_ctx=="jsn-ZCU208 FT4232H-832204143211A-147fb093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.602
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==0 && jtag_device_ctx=="jsn-ZCU208 FT4232H-832204143211A-147fb093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:36.602
+!MESSAGE XSCT Command: [fpga -file C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.159
+!MESSAGE XSCT command with result: [fpga -file C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.169
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.177
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.178
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.189
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, design_sgbm_wrapper_10]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.189
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.190
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.190
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.194
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.195
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.206
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.207
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.214
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.214
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.380
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.380
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.387
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.387
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.795
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:56.795
+!MESSAGE XSCT Command: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/boot/fsbl.elf], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:57.531
+!MESSAGE XSCT command with result: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:57.531
+!MESSAGE XSCT Command: [set bp_9_57_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:57.699
+!MESSAGE XSCT command with result: [set bp_9_57_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 4]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:09:57.699
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:07.901
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:07.901
+!MESSAGE XSCT Command: [bpremove $bp_9_57_fsbl_bp], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:07.914
+!MESSAGE XSCT command with result: [bpremove $bp_9_57_fsbl_bp], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:07.914
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:07.921
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:07.921
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:08.323
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:08.324
+!MESSAGE XSCT Command: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Debug/vitis_image.elf], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:09.338
+!MESSAGE XSCT command with result: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Debug/vitis_image.elf], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:09.338
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:09.505
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:09.708
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:09.717
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:09.717
+!MESSAGE XSCT Command: [con], Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-22 20:10:09.908
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-169: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.426
+!MESSAGE XSCT Command: [disconnect tcfchan#20], Thread: Thread-1754
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.429
+!MESSAGE XSCT command with result: [disconnect tcfchan#20], Result: [null, ]. Thread: Thread-1754
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.463
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.633
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#21]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.633
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.641
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.642
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.646
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.646
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.659
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.668
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.673
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.673
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.687
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.732
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.736
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.736
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.748
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.749
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.753
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.753
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.766
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.766
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.770
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.771
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.784
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.784
+!MESSAGE XSCT Command: [version -server], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.866
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.866
+!MESSAGE XSCT Command: [version], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.867
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.867
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.871
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.872
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.884
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.884
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.896
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level == 0}], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.897
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.897
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.898
+!MESSAGE XSCT Command: [source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.905
+!MESSAGE XSCT command with result: [source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.905
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.917
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:25.917
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:27.148
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:27.148
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.166
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.176
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.181
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.181
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.193
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.194
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==0 && jtag_device_ctx=="jsn-ZCU208 FT4232H-832204143211A-147fb093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.351
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==0 && jtag_device_ctx=="jsn-ZCU208 FT4232H-832204143211A-147fb093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:30.351
+!MESSAGE XSCT Command: [fpga -file C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.905
+!MESSAGE XSCT command with result: [fpga -file C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.915
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.923
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.924
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.937
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/hw/design_sgbm_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, design_sgbm_wrapper_10]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.937
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.938
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.938
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.943
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx ZCU208 FT4232H 832204143211A]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.944
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.956
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx ZCU208 FT4232H 832204143211A" && level==1}], Result: [null,      2  xczu48dr (idcode 147fb093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:49.957
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.149
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.149
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.152
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.152
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.161
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.161
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.734
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:50.734
+!MESSAGE XSCT Command: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/boot/fsbl.elf], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:51.298
+!MESSAGE XSCT command with result: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/boot/fsbl.elf], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:51.299
+!MESSAGE XSCT Command: [set bp_8_51_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:51.469
+!MESSAGE XSCT command with result: [set bp_8_51_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 5]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:08:51.470
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.474
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.474
+!MESSAGE XSCT Command: [bpremove $bp_8_51_fsbl_bp], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.491
+!MESSAGE XSCT command with result: [bpremove $bp_8_51_fsbl_bp], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.492
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.499
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.499
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.711
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:01.711
+!MESSAGE XSCT Command: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Debug/vitis_image.elf], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:02.724
+!MESSAGE XSCT command with result: [dow C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Debug/vitis_image.elf], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:02.724
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:02.893
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:03.099
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:03.106
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:03.107
+!MESSAGE XSCT Command: [con], Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:09:03.300
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-638: Launching SystemDebugger_vitis_image_system_3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:22:21.808
+!MESSAGE XSCT Command: [disconnect tcfchan#21], Thread: Thread-1818
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-24 02:22:21.812
+!MESSAGE XSCT command with result: [disconnect tcfchan#21], Result: [null, ]. Thread: Thread-1818

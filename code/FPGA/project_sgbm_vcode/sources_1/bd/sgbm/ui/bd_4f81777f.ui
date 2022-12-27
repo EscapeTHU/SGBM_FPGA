@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.28571",
+   "Default View_TopLeft":"-349,-13",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst aggregate_cost_0 -pg 1 -lvl 3 -x 680 -y 300 -defaultsOSRD
+preplace inst census_0 -pg 1 -lvl 1 -x 50 -y 370 -defaultsOSRD
+preplace inst origin_cost_0 -pg 1 -lvl 2 -x 360 -y 410 -defaultsOSRD
+preplace inst census_1 -pg 1 -lvl 1 -x 50 -y 170 -defaultsOSRD
+preplace netloc census_0_outData 1 1 1 180 340n
+preplace netloc census_1_outData 1 1 1 220 140n
+preplace netloc census_1_row_out 1 1 1 200 160n
+preplace netloc census_1_col_out 1 1 1 190 180n
+preplace netloc origin_cost_0_cost 1 2 1 500 310n
+preplace netloc origin_cost_0_out_row 1 2 1 520 330n
+preplace netloc origin_cost_0_out_col 1 2 1 530 350n
+preplace netloc origin_cost_0_valid 1 2 1 510 290n
+preplace netloc census_1_valid 1 1 1 210 200n
+levelinfo -pg 1 -350 50 360 680 840
+pagesize -pg 1 -db -bbox -sgen -350 -110 840 660
+"
+}
+

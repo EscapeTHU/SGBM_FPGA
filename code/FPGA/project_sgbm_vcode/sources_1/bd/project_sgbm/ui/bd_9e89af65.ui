@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.604743",
+   "Default View_TopLeft":"230,-190",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst ila_0 -pg 1 -lvl 6 -x 2000 -y 110 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 7 -x 2300 -y 280 -defaultsOSRD
+preplace inst disparity_calc_0 -pg 1 -lvl 3 -x 660 -y 270 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 5 -x 1530 -y 560 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 6 -x 2000 -y 620 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 5 -x 1530 -y 750 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 7 -x 2300 -y 630 -defaultsOSRD
+preplace inst PLL_sgbm_0 -pg 1 -lvl 1 -x 120 -y 370 -defaultsOSRD
+preplace inst ram_rw_0 -pg 1 -lvl 4 -x 1040 -y 420 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 8 -x 2620 -y 710 -defaultsOSRD
+preplace inst sgbm_system_0 -pg 1 -lvl 2 -x 340 -y 290 -defaultsOSRD
+preplace netloc PLL_sgbm_0_clkout 1 1 6 220 380 460 380 860 240 NJ 240 1840 240 N
+preplace netloc PLL_sgbm_0_restn 1 1 3 210 390 500 390 870J
+preplace netloc disparity_calc_0_col_out 1 3 4 810 250 NJ 250 NJ 250 2160J
+preplace netloc disparity_calc_0_disparity 1 3 4 850 260 NJ 260 NJ 260 NJ
+preplace netloc disparity_calc_0_row_out 1 3 4 820 280 NJ 280 NJ 280 NJ
+preplace netloc disparity_calc_0_valid 1 3 4 830 290 NJ 290 NJ 290 2150J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 5 2 1850 760 2160J
+preplace netloc ram_rw_0_intr 1 4 1 1210 480n
+preplace netloc sgbm_system_0_sgbm_col 1 2 4 470 130 NJ 130 NJ 130 NJ
+preplace netloc sgbm_system_0_sgbm_cost 1 2 4 490 90 NJ 90 NJ 90 NJ
+preplace netloc sgbm_system_0_sgbm_row 1 2 4 480 110 NJ 110 NJ 110 NJ
+preplace netloc sgbm_system_0_sgbm_valid 1 2 4 510 400 840J 300 NJ 300 1830J
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 7 20 550 NJ 550 NJ 550 NJ 550 1220 650 1840 480 2150J
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 6 30 540 NJ 540 NJ 540 NJ 540 1230 470 1830
+preplace netloc blk_mem_gen_0_doutb 1 3 5 840 850 NJ 850 NJ 850 NJ 850 2460
+preplace netloc ram_rw_0_ram_wr_data 1 4 4 NJ 440 NJ 440 NJ 440 2460
+preplace netloc ram_rw_0_ram_addr 1 4 4 NJ 400 NJ 400 NJ 400 2480
+preplace netloc ram_rw_0_ram_we 1 4 4 NJ 420 NJ 420 NJ 420 2450
+preplace netloc ram_rw_0_ram_en 1 4 4 NJ 380 NJ 380 NJ 380 2470
+preplace netloc ram_rw_0_ram_rst 1 4 4 NJ 460 NJ 460 NJ 460 2440
+preplace netloc ram_rw_0_ram_clk 1 4 4 NJ 360 NJ 360 2160J 390 2490
+preplace netloc axi_interconnect_0_M00_AXI 1 6 1 N 610
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 5 1 N 540
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 7 1 N 630
+levelinfo -pg 1 0 120 340 660 1040 1530 2000 2300 2620 2760
+pagesize -pg 1 -db -bbox -sgen 0 -10 2760 860
+"
+}
+0

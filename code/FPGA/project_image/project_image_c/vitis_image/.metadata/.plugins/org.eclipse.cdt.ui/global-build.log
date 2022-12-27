@@ -1,0 +1,27 @@
+Nothing to build in platform 'design_sgbm_wrapper'
+
+20:09:23 **** Incremental Build of configuration Debug for project vitis_image ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: vitis_image.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/sw/design_sgbm_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "vitis_image.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/udp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: vitis_image.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size vitis_image.elf  |tee "vitis_image.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 186735	   7960	35819789	36014484	2258994	vitis_image.elf
+'Finished building: vitis_image.elf.size'
+' '
+20:09:24 **** Incremental Build of configuration Debug for project vitis_image_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50348 C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/design_sgbm_wrapper.xpfm standalone_psu_cortexa53_0 C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/design_sgbm_wrapper.xpfm --sys_config design_sgbm_wrapper --bif C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image_system/Debug/system.bif --bitstream C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit --elf C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/Debug/vitis_image.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image/_ide/bitstream/design_sgbm_wrapper.bit
+Running C:/Xilinx/Vitis/2021.2/bin/bootgen -arch zynqmp -image C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

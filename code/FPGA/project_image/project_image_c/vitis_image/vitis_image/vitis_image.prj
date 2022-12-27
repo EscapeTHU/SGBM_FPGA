@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="vitis_image" location="C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/vitis_image" platform="C:/Users/zty/Desktop/xilinx_project/project_image/vitis_image/design_sgbm_wrapper/export/design_sgbm_wrapper/design_sgbm_wrapper.xpfm" platformUID="xilinx:zcu208::0.0(custom)" systemProject="vitis_image_system" sysConfig="design_sgbm_wrapper" runtime="cpp" cpu="standalone_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="7d17ca338a090125e12fd6a9096b58c4">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.523421742">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1046474136">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="lwip_udp_perf_client" hasBspSettings="true"/>
+</sdkproject:SdkProject>

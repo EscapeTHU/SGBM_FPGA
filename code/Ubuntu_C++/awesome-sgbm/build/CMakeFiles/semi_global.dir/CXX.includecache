@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SemiGlobalMatching.h
+sgm_types.h
+../include/sgm_types.h
+vector
+-
+
+../include/sgm_types.h
+cstdint
+-
+limits
+-
+
+../include/sgm_util.h
+sgm_types.h
+../include/sgm_types.h
+cstring
+-
+stdio.h
+-
+
+/home/zty/python_program/awesome-sgbm/src/SemiGlobalMatching.cpp
+SemiGlobalMatching.h
+/home/zty/python_program/awesome-sgbm/src/SemiGlobalMatching.h
+sgm_util.h
+/home/zty/python_program/awesome-sgbm/src/sgm_util.h
+algorithm
+-
+vector
+-
+cassert
+-
+math.h
+-
+iostream
+-
+

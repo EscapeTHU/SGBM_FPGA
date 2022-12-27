@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:vitis_image Release,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_vitis_image_system_1,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_vitis_image_system,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_vitis_image_system_2,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_vitis_image_system_3
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_vitis_image_system/activeLaunchMode=systemrun
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_vitis_image_system_1/activeLaunchMode=run

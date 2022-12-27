@@ -1,0 +1,334 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xczu48dr-fsvg1517-2-e",
+      "gen_directory": "../../../../project_sgbm.gen/sources_1/bd/sgbm",
+      "name": "sgbm",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2"
+    },
+    "design_tree": {
+      "aggregate_cost_0": "",
+      "census_0": "",
+      "origin_cost_0": "",
+      "census_1": ""
+    },
+    "components": {
+      "aggregate_cost_0": {
+        "vlnv": "xilinx.com:module_ref:aggregate_cost:1.0",
+        "xci_name": "sgbm_aggregate_cost_0_0",
+        "xci_path": "ip\\sgbm_aggregate_cost_0_0\\sgbm_aggregate_cost_0_0.xci",
+        "inst_hier_path": "aggregate_cost_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "aggregate_cost",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "cost_init": {
+            "direction": "I",
+            "left": "863",
+            "right": "0"
+          },
+          "row": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "col": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "cost_aggr": {
+            "direction": "O",
+            "left": "863",
+            "right": "0"
+          },
+          "out_row": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "out_col": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "census_0": {
+        "vlnv": "xilinx.com:module_ref:census:1.0",
+        "xci_name": "sgbm_census_0_0",
+        "xci_path": "ip\\sgbm_census_0_0\\sgbm_census_0_0.xci",
+        "inst_hier_path": "census_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "census",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "inData": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_in": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "col_in": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "outData": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "row_out": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "col_out": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "origin_cost_0": {
+        "vlnv": "xilinx.com:module_ref:origin_cost:1.0",
+        "xci_name": "sgbm_origin_cost_0_0",
+        "xci_path": "ip\\sgbm_origin_cost_0_0\\sgbm_origin_cost_0_0.xci",
+        "inst_hier_path": "origin_cost_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "origin_cost",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "left_pix": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "right_pix": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "row": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "col": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "cost": {
+            "direction": "O",
+            "left": "863",
+            "right": "0"
+          },
+          "out_row": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "out_col": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "census_1": {
+        "vlnv": "xilinx.com:module_ref:census:1.0",
+        "xci_name": "sgbm_census_1_0",
+        "xci_path": "ip\\sgbm_census_1_0\\sgbm_census_1_0.xci",
+        "inst_hier_path": "census_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "census",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "inData": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "row_in": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "col_in": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "outData": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "row_out": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "col_out": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "valid": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "census_0_outData": {
+        "ports": [
+          "census_0/outData",
+          "origin_cost_0/right_pix"
+        ]
+      },
+      "census_1_col_out": {
+        "ports": [
+          "census_1/col_out",
+          "origin_cost_0/col"
+        ]
+      },
+      "census_1_outData": {
+        "ports": [
+          "census_1/outData",
+          "origin_cost_0/left_pix"
+        ]
+      },
+      "census_1_row_out": {
+        "ports": [
+          "census_1/row_out",
+          "origin_cost_0/row"
+        ]
+      },
+      "census_1_valid": {
+        "ports": [
+          "census_1/valid",
+          "origin_cost_0/en"
+        ]
+      },
+      "origin_cost_0_cost": {
+        "ports": [
+          "origin_cost_0/cost",
+          "aggregate_cost_0/cost_init"
+        ]
+      },
+      "origin_cost_0_out_col": {
+        "ports": [
+          "origin_cost_0/out_col",
+          "aggregate_cost_0/col"
+        ]
+      },
+      "origin_cost_0_out_row": {
+        "ports": [
+          "origin_cost_0/out_row",
+          "aggregate_cost_0/row"
+        ]
+      },
+      "origin_cost_0_valid": {
+        "ports": [
+          "origin_cost_0/valid",
+          "aggregate_cost_0/en"
+        ]
+      }
+    }
+  }
+}
