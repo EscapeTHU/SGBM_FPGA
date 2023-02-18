@@ -17,5 +17,14 @@ This directory contains all verilog code that has been used in the overall PL pa
 This directory contains both code of PS part and code of PL part. Under this directory, there are 2 directories, project_image_c for vitis C code and project_image_vcode for verilog code! Under ./vitis_image/vitis_image/src/, I've mainly written main.c, main.h, udp_perf_client.c and udp_perf_client.h. If you'd like to run these vitis code yourself, firstly you're supposed to set up the PL part in vivado with code under project_image_vcode, simulation, implementation and generate bitstream finally. Secondly, you're supposed to export hardware with bitstream to get .xsa file. Thirdly, create your own vitis project using .xsa which has just been generated in the second step. I have to mention that please create your vitis project using the template named "LWIP UDP Client" that has been offered by vitis software. Finally, change the code in main.c, main.h, udp_perf_client.c and udp_perf_client.h into my code, and there you go!
 ## Tutorial and Video
 You're greatly welcomed to follow my bilibili account, which is https://space.bilibili.com/341561358. Hopefully you can find SGBM video explanation there at https://www.bilibili.com/video/BV1kR4y1S7TJ !
+## Start
+```
+# initial project
+cd STEREO_MATCH_SGBM/code/Ubuntu_C++/awesome-sgbm
+rm -rf build && mkdir build
+# install opencv dependence for cmake
+git clone git@github.com:opencv/opencv.git
+
+```
 ## TODO
 A new video will be made in a couple of days illustrating the usage of this repository in detail!
