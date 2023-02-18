@@ -1,0 +1,3 @@
+# ignore dot files/directories
+build
+opencv

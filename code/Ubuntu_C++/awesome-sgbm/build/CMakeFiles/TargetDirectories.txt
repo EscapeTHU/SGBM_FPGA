@@ -1,4 +1,0 @@
-/home/zty/python_program/awesome-sgbm/build/CMakeFiles/rebuild_cache.dir
-/home/zty/python_program/awesome-sgbm/build/CMakeFiles/edit_cache.dir
-/home/zty/python_program/awesome-sgbm/build/CMakeFiles/semi_global_matching.dir
-/home/zty/python_program/awesome-sgbm/build/CMakeFiles/semi_global.dir
