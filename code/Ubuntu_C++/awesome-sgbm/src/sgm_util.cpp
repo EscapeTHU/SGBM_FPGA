@@ -9,9 +9,43 @@
 #include <queue>
 #include <iostream>
 
+void sgm_util::census_transform_3x3(const uint8* source, uint32* census, const sint32& width,
+	const sint32& height)
+{
+        std::cout<<"Size 3x3!!!!!!"<<std::endl;
+	if (source == nullptr || census == nullptr || width <= 3 || height <= 3) {
+		return;
+	}
+
+	// 逐像素计算census值
+	for (sint32 i = 1; i < height - 1; i++) {
+		for (sint32 j = 1; j < width - 1; j++) {
+			
+			// 中心像素值
+			const uint8 gray_center = source[i * width + j];
+			
+			// 遍历大小为3*3的窗口内邻域像素，逐一比较像素值与中心像素值的的大小，计算census值
+			uint32 census_val = 0u;
+			for (sint32 r = -1; r <= 1; r++) {
+				for (sint32 c = -1; c <= 1; c++) {
+					census_val <<= 1;
+					const uint8 gray = source[(i + r) * width + j + c];
+					if (gray < gray_center) {
+						census_val += 1;
+					}
+				}
+			}
+
+			// 中心像素的census值
+			census[i * width + j] = census_val;		
+		}
+	}
+}
+
 void sgm_util::census_transform_5x5(const uint8* source, uint32* census, const sint32& width,
 	const sint32& height)
 {
+	std::cout<<"Size 5x5!!!!!!"<<std::endl;
 	if (source == nullptr || census == nullptr || width <= 5 || height <= 5) {
 		return;
 	}
@@ -41,25 +75,25 @@ void sgm_util::census_transform_5x5(const uint8* source, uint32* census, const s
 	}
 }
 
-void sgm_util::census_transform_3x3(const uint8* source, uint32* census, const sint32& width,
+void sgm_util::census_transform_7x7(const uint8* source, uint64* census, const sint32& width,
 	const sint32& height)
 {
-        std::cout<<"Size 3x3!!!!!!"<<std::endl;
-	if (source == nullptr || census == nullptr || width <= 3 || height <= 3) {
+	std::cout<<"Size 7x7!!!!!!"<<std::endl;
+	if (source == nullptr || census == nullptr || width <= 7 || height <= 7) {
 		return;
 	}
 
 	// 逐像素计算census值
-	for (sint32 i = 1; i < height - 1; i++) {
-		for (sint32 j = 1; j < width - 1; j++) {
+	for (sint32 i = 3; i < height - 3; i++) {
+		for (sint32 j = 3; j < width - 3; j++) {
 			
 			// 中心像素值
 			const uint8 gray_center = source[i * width + j];
 			
 			// 遍历大小为5x5的窗口内邻域像素，逐一比较像素值与中心像素值的的大小，计算census值
 			uint32 census_val = 0u;
-			for (sint32 r = -1; r <= 1; r++) {
-				for (sint32 c = -1; c <= 1; c++) {
+			for (sint32 r = -3; r <= 3; r++) {
+				for (sint32 c = -3; c <= 3; c++) {
 					census_val <<= 1;
 					const uint8 gray = source[(i + r) * width + j + c];
 					if (gray < gray_center) {
@@ -76,6 +110,7 @@ void sgm_util::census_transform_3x3(const uint8* source, uint32* census, const s
 
 void sgm_util::census_transform_9x7(const uint8* source, uint64* census, const sint32& width, const sint32& height)
 {
+        std::cout<<"Size 9x7!!!!!!"<<std::endl;
 	if (source == nullptr || census == nullptr || width <= 9 || height <= 7) {
 		return;
 	}
@@ -87,7 +122,7 @@ void sgm_util::census_transform_9x7(const uint8* source, uint64* census, const s
 			// 中心像素值
 			const uint8 gray_center = source[i * width + j];
 
-			// 遍历大小为5x5的窗口内邻域像素，逐一比较像素值与中心像素值的的大小，计算census值
+			// 遍历大小为9*7的窗口内邻域像素，逐一比较像素值与中心像素值的的大小，计算census值
 			uint64 census_val = 0u;
 			for (sint32 r = -4; r <= 4; r++) {
 				for (sint32 c = -3; c <= 3; c++) {

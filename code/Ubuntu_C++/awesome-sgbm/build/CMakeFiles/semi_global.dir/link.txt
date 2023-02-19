@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -std=c++11 -pthread  -ggdb   -O0 -march=native   -O3 -DNDEBUG -shared -Wl,-soname,libsemi_global.so -o ../lib/libsemi_global.so CMakeFiles/semi_global.dir/src/SemiGlobalMatching.cpp.o CMakeFiles/semi_global.dir/src/sgm_util.cpp.o 

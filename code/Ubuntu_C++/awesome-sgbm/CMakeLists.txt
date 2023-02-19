@@ -18,8 +18,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread  -ggdb   -O0 -march=native ")
 #set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC -fvisibility=hidden")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fPIC -fvisibility=hidden")
 
-set(OpenCV_DIR "/usr/local/include/opencv3.2.0/share/OpenCV")
-find_package( OpenCV REQUIRED )
+set(OpenCV_DIR "/usr/local/include/opencv-3.2.0/share/OpenCV")
+find_package( OpenCV 3.2 REQUIRED )
 find_package(PCL REQUIRED)
 
 
