@@ -77,8 +77,10 @@ sudo make install
 pcl_viewer ../test/pcl_logo.pcd
 ```
 ### build project
+```
 cd STEREO_MATCH_SGBM/code/Ubuntu_C++/awesome-sgbm
 mkdir build && cd build
 cmake .. && make -j
+```
 ## TODO
 A new video will be made in a couple of days illustrating the usage of this repository in detail!
