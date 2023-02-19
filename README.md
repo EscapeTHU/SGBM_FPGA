@@ -18,13 +18,67 @@ This directory contains both code of PS part and code of PL part. Under this dir
 ## Tutorial and Video
 You're greatly welcomed to follow my bilibili account, which is https://space.bilibili.com/341561358. Hopefully you can find SGBM video explanation there at https://www.bilibili.com/video/BV1kR4y1S7TJ !
 ## Start
+### initial project
 ```
-# initial project
 cd STEREO_MATCH_SGBM/code/Ubuntu_C++/awesome-sgbm
 rm -rf build && mkdir build
-# install opencv dependence for cmake
-git clone git@github.com:opencv/opencv.git
-
 ```
+### install opencv
+```
+git clone git@github.com:opencv/opencv.git
+cd opencv
+git checkout 3.2.0
+mkdir build && cd build
+sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg.dev libtiff5.dev libswscale-dev libjasper-dev -y
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local/include/opencv-3.2.0 ..
+make -j8
+sudo make install
+sudo gedit /etc/ld.so.conf
+    add
+        /usr/local/include/opencv-3.2.0
+sudo ldconfig
+sudo gedit /etc/bash.bashrc
+    add
+        PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/include/opencv-3.2.0/lib/pkgconfig
+        export PKG_CONFIG_PATH
+source /etc/bash.bashrc
+pkg-config opencv --modversion
+cd ../samples/cpp/example_cmake
+cmake . && make && ./opencv_example
+```
+### install PCL
+```
+wget https://github.com/PointCloudLibrary/pcl/releases/tag/pcl-1.10.1
+tar -zxvf pcl-1.10.1.tar.gz
+cd pcl-1.10.1
+sudo apt-get update
+sudo apt-get install git build-essential linux-libc-dev
+sudo apt-get install cmake cmake-gui 
+sudo apt-get install libusb-1.0-0-dev libusb-dev libudev-dev
+sudo apt-get install mpi-default-dev openmpi-bin openmpi-common
+sudo apt-get install libpcap-dev
+sudo apt-get install libflann1.9 libflann-dev
+sudo apt-get install libeigen3-dev
+sudo apt-get install libboost-all-dev
+sudo apt-get install vtk6 libvtk6.3 libvtk6-dev libvtk6.3-qt libvtk6-qt-dev 
+sudo apt-get install libqhull* libgtest-dev
+sudo apt-get install freeglut3-dev pkg-config
+sudo apt-get install libxmu-dev libxi-dev 
+sudo apt-get install mono-complete
+sudo apt-get install libopenni-dev libopenni2-dev
+mkdir build %% cd build
+cmake -DCMAKE_BUILD_TYPE=None \
+      -DCMAKE_INSTALL_PREFIX=/usr/local \
+      -DBUILD_GPU=ON \
+      -DBUILD_apps=ON \
+      -DBUILD_examples=ON ..
+make -j8
+sudo make install
+pcl_viewer ../test/pcl_logo.pcd
+```
+### build project
+cd STEREO_MATCH_SGBM/code/Ubuntu_C++/awesome-sgbm
+mkdir build && cd build
+cmake .. && make -j
 ## TODO
 A new video will be made in a couple of days illustrating the usage of this repository in detail!
