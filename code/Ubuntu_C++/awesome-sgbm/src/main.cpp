@@ -48,8 +48,8 @@ int main(int argv, char **argc)
     cv::Mat img_right = cv::imread(path_right, cv::IMREAD_GRAYSCALE);
 
     // save image
-    cv::String pl = "awesome-sgbm/Data/FPGA_proc/grey_left.png";
-    cv::String pr = "awesome-sgbm/Data/FPGA_proc/grey_right.png";
+    cv::String pl = "awesome-sgbm/Data/FPGA_proc/pic/grey_left.png";
+    cv::String pr = "awesome-sgbm/Data/FPGA_proc/pic/grey_right.png";
     pl = cwd_ + pl;
     pr = cwd_ + pr;
     
@@ -247,10 +247,12 @@ int main(int argv, char **argc)
     }
 
     // 保存结果txt
+    std::string disparity_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/disparity/disparity.txt";
+    std::string disparity_temp_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/disparity/disparity_temp.txt";
     std::FILE *FilePosition;
     std::FILE *FilePosition_temp;
-    FilePosition = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/disparity.txt", "w");
-    FilePosition_temp = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/disparity_temp.txt", "w");
+    FilePosition = std::fopen(disparity_txt.c_str(), "w");
+    FilePosition_temp = std::fopen(disparity_temp_txt.c_str(), "w");
     std::cout << "Start Writing Disparity..." << std::endl;
     for (sint32 i = 0; i < height; i++)
     {
@@ -270,6 +272,7 @@ int main(int argv, char **argc)
         }
     }
     std::fclose(FilePosition);
+    std::fclose(FilePosition_temp);
     std::cout << "Writing Disparity Finished!" << std::endl;
 
     // Save Census left and Census right
@@ -277,10 +280,14 @@ int main(int argv, char **argc)
     std::FILE *FilePosition_right_d;
     std::FILE *FilePosition_left_X;
     std::FILE *FilePosition_right_X;
-    FilePosition_left_d = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/census_left_d.txt", "w");
-    FilePosition_right_d = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/census_right_d.txt", "w");
-    FilePosition_left_X = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/census_left_X.txt", "w");
-    FilePosition_right_X = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/census_right_X.txt", "w");
+    std::string c_l_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_left_d.txt";
+    std::string c_r_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_right_d.txt";
+    std::string c_l_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_left_X.txt";
+    std::string c_r_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_right_X.txt";
+    FilePosition_left_d = std::fopen(c_l_d_txt.c_str(), "w");
+    FilePosition_right_d = std::fopen(c_r_d_txt.c_str(), "w");
+    FilePosition_left_X = std::fopen(c_l_X_txt.c_str(), "w");
+    FilePosition_right_X = std::fopen(c_r_X_txt.c_str(), "w");
     std::cout << "Start Writing Census Left and Right..." << std::endl;
     for (sint32 i = 0; i < height * width; i++)
     {
@@ -298,8 +305,10 @@ int main(int argv, char **argc)
     // Save origin cost
     std::FILE *FilePosition_cost_d;
     std::FILE *FilePosition_cost_X;
-    FilePosition_cost_d = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/cost_init_d.txt", "w");
-    FilePosition_cost_X = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/cost_init_X.txt", "w");
+    std::string cost_init_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cost/cost_init_d.txt";
+    std::string cost_init_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cost/cost_init_X.txt";
+    FilePosition_cost_d = std::fopen(cost_init_d_txt.c_str(), "w");
+    FilePosition_cost_X = std::fopen(cost_init_X_txt.c_str(), "w");
     std::cout << "Start Writing Census Left and Right..." << std::endl;
     for (sint32 i = 0; i < height * width; i++)
     {
@@ -324,10 +333,14 @@ int main(int argv, char **argc)
     std::FILE *FilePosition_aggr_rl_d;
     std::FILE *FilePosition_aggr_lr_X;
     std::FILE *FilePosition_aggr_rl_X;
-    FilePosition_aggr_lr_d = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/aggr_lr_d.txt", "w");
-    FilePosition_aggr_rl_d = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/aggr_rl_d.txt", "w");
-    FilePosition_aggr_lr_X = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/aggr_lr_X.txt", "w");
-    FilePosition_aggr_rl_X = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/aggr_rl_X.txt", "w");
+    std::string aggr_lr_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_lr_d.txt";
+    std::string aggr_rl_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_rl_d.txt";
+    std::string aggr_lr_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_lr_X.txt";
+    std::string aggr_rl_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_rl_X.txt";
+    FilePosition_aggr_lr_d = std::fopen(aggr_lr_d_txt.c_str(), "w");
+    FilePosition_aggr_rl_d = std::fopen(aggr_rl_d_txt.c_str(), "w");
+    FilePosition_aggr_lr_X = std::fopen(aggr_lr_X_txt.c_str(), "w");
+    FilePosition_aggr_rl_X = std::fopen(aggr_rl_X_txt.c_str(), "w");
     std::cout << "Start Writing Census Left and Right..." << std::endl;
     for (sint32 i = 0; i < height * width; i++)
     {
@@ -347,15 +360,21 @@ int main(int argv, char **argc)
             std::fprintf(FilePosition_aggr_rl_X, "%08X\t", cost_aggr_rl[i * disp_range + j]);
         }
     }
+    std::fclose(FilePosition_aggr_lr_d);
+    std::fclose(FilePosition_aggr_lr_X);
+    std::fclose(FilePosition_aggr_rl_d);
+    std::fclose(FilePosition_aggr_rl_X);
 
     // Save my disparity
     std::FILE *FilePosition_my_disp;
-    FilePosition_my_disp = std::fopen("/home/zty/python_program/awesome-sgbm/Data/FPGA_proc/my_disparity.txt", "w");
+    std::string my_disparity_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/my_disparity.txt";
+    FilePosition_my_disp = std::fopen(my_disparity_txt.c_str(), "w");
     std::cout << "Start Writing My Disparity..." << std::endl;
     for (sint32 i = 0; i < height * width; i++)
     {
         std::fprintf(FilePosition_my_disp, "%08X\n", my_disparity[i]);
     }
+    std::fclose(FilePosition_my_disp);
 
     cv::namedWindow("视差图", 1);
     cv::namedWindow("视差图TEMP!", 1);

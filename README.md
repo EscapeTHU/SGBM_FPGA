@@ -81,6 +81,7 @@ pcl_viewer ../test/pcl_logo.pcd
 cd STEREO_MATCH_SGBM/code/Ubuntu_C++/awesome-sgbm
 mkdir build && cd build
 cmake .. && make -j
+../bin/semi_global_matching ../Data/cone/left.png ../Data/cone/right.png 64 128
 ```
 ## TODO
 A new video will be made in a couple of days illustrating the usage of this repository in detail!
