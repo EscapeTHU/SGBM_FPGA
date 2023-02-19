@@ -21,6 +21,7 @@ public:
 	enum CensusSize {
 		Census3x3 = 0,
 		Census5x5,
+		Census7x7,
 		Census9x7
 	};
 

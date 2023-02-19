@@ -52,7 +52,7 @@ int main(int argv, char **argc)
     cv::String pr = "awesome-sgbm/Data/FPGA_proc/pic/grey_right.png";
     pl = cwd_ + pl;
     pr = cwd_ + pr;
-    
+
     cv::imwrite(pl, img_left);
     cv::imwrite(pr, img_right);
 
@@ -110,7 +110,14 @@ int main(int argv, char **argc)
     std::cout << "sgm_option.min_disparity == " << sgm_option.min_disparity << std::endl;
     std::cout << "sgm_option.max_disparity == " << sgm_option.max_disparity << std::endl;
     // census窗口类型
-    sgm_option.census_size = SemiGlobalMatching::Census5x5;
+    if (atoi(argc[5]) == 3)
+        sgm_option.census_size = SemiGlobalMatching::Census3x3;
+    else if (atoi(argc[5]) == 5)
+        sgm_option.census_size = SemiGlobalMatching::Census5x5;
+    else if (atoi(argc[5]) == 7)
+        sgm_option.census_size = SemiGlobalMatching::Census7x7;
+    else
+        sgm_option.census_size = SemiGlobalMatching::Census9x7;
     // 一致性检查
     sgm_option.is_check_lr = true;
     sgm_option.lrcheck_thres = 1.0f;
