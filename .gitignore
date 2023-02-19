@@ -1,5 +1,2 @@
 # ignore dot files/directories
-build
-opencv
-bin
-lib
+.vscode
