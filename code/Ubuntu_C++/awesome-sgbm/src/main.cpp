@@ -86,7 +86,6 @@ int main(int argv, char **argc)
     const sint32 height = static_cast<uint32>(img_right.rows);
     std::cout << "width of input picture == " << width << std::endl;
     std::cout << "height of input picture == " << height << std::endl;
-    return 0;
 
     // the graydata of the left and right image
     auto bytes_left = new uint8[width * height];
