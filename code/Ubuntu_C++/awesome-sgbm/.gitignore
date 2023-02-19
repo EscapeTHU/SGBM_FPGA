@@ -3,3 +3,4 @@ build
 opencv
 bin
 lib
+.vscode
