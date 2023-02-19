@@ -226,12 +226,13 @@ bool SemiGlobalMatching::Reset(const uint32& width, const uint32& height, const 
 void SemiGlobalMatching::CensusTransform() const
 {
 	// 左右影像census变换
-    if (option_.census_size == Census5x5) {
-        // sgm_util::census_transform_5x5(img_left_, static_cast<uint32*>(census_left_), width_, height_);
-        // sgm_util::census_transform_5x5(img_right_, static_cast<uint32*>(census_right_), width_, height_);
+    if (option_.census_size == Census3x3) {
         sgm_util::census_transform_3x3(img_left_, static_cast<uint32*>(census_left_), width_, height_);
         sgm_util::census_transform_3x3(img_right_, static_cast<uint32*>(census_right_), width_, height_);
-    }else {
+    } else if (option_.census_size == Census5x5) {
+        sgm_util::census_transform_5x5(img_left_, static_cast<uint32*>(census_left_), width_, height_);
+        sgm_util::census_transform_5x5(img_right_, static_cast<uint32*>(census_right_), width_, height_);
+    } else {
         sgm_util::census_transform_9x7(img_left_, static_cast<uint64*>(census_left_), width_, height_);
         sgm_util::census_transform_9x7(img_right_, static_cast<uint64*>(census_right_), width_, height_);
     }

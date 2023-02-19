@@ -19,7 +19,8 @@ public:
 
 	/** \brief Census窗口尺寸类型 */
 	enum CensusSize {
-		Census5x5 = 0,
+		Census3x3 = 0,
+		Census5x5,
 		Census9x7
 	};
 
