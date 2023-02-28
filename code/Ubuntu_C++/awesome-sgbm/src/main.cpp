@@ -119,19 +119,19 @@ int main(int argv, char **argc)
     else
         sgm_option.census_size = SemiGlobalMatching::Census9x7;
     // 一致性检查
-    sgm_option.is_check_lr = true;
+    sgm_option.is_check_lr = false;
     sgm_option.lrcheck_thres = 1.0f;
     // 唯一性约束
-    sgm_option.is_check_unique = true;
+    sgm_option.is_check_unique = false;
     sgm_option.uniqueness_ratio = 0.99;
     // 剔除小连通区
-    sgm_option.is_remove_speckles = true;
+    sgm_option.is_remove_speckles = false;
     sgm_option.min_speckle_aera = 50;
     // 惩罚项P1、P2
     sgm_option.p1 = 10;
     sgm_option.p2_init = 150;
     // 视差图填充
-    sgm_option.is_fill_holes = true;
+    sgm_option.is_fill_holes = false;
 
     // 定义SGM匹配类实例
     SemiGlobalMatching sgm;
@@ -283,94 +283,94 @@ int main(int argv, char **argc)
     std::cout << "Writing Disparity Finished!" << std::endl;
 
     // Save Census left and Census right
-    std::FILE *FilePosition_left_d;
-    std::FILE *FilePosition_right_d;
-    std::FILE *FilePosition_left_X;
-    std::FILE *FilePosition_right_X;
-    std::string c_l_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_left_d.txt";
-    std::string c_r_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_right_d.txt";
-    std::string c_l_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_left_X.txt";
-    std::string c_r_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_right_X.txt";
-    FilePosition_left_d = std::fopen(c_l_d_txt.c_str(), "w");
-    FilePosition_right_d = std::fopen(c_r_d_txt.c_str(), "w");
-    FilePosition_left_X = std::fopen(c_l_X_txt.c_str(), "w");
-    FilePosition_right_X = std::fopen(c_r_X_txt.c_str(), "w");
-    std::cout << "Start Writing Census Left and Right..." << std::endl;
-    for (sint32 i = 0; i < height * width; i++)
-    {
-        std::fprintf(FilePosition_left_d, "%d\n", census_left[i]);
-        std::fprintf(FilePosition_right_d, "%d\n", census_right[i]);
-        std::fprintf(FilePosition_left_X, "%08X\n", census_left[i]);
-        std::fprintf(FilePosition_right_X, "%08X\n", census_right[i]);
-    }
-    std::fclose(FilePosition_left_d);
-    std::fclose(FilePosition_right_d);
-    std::fclose(FilePosition_left_X);
-    std::fclose(FilePosition_right_X);
-    std::cout << "Writing Census Left and Right Finished!" << std::endl;
+    // std::FILE *FilePosition_left_d;
+    // std::FILE *FilePosition_right_d;
+    // std::FILE *FilePosition_left_X;
+    // std::FILE *FilePosition_right_X;
+    // std::string c_l_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_left_d.txt";
+    // std::string c_r_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_right_d.txt";
+    // std::string c_l_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_left_X.txt";
+    // std::string c_r_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cencus/census_right_X.txt";
+    // FilePosition_left_d = std::fopen(c_l_d_txt.c_str(), "w");
+    // FilePosition_right_d = std::fopen(c_r_d_txt.c_str(), "w");
+    // FilePosition_left_X = std::fopen(c_l_X_txt.c_str(), "w");
+    // FilePosition_right_X = std::fopen(c_r_X_txt.c_str(), "w");
+    // std::cout << "Start Writing Census Left and Right..." << std::endl;
+    // for (sint32 i = 0; i < height * width; i++)
+    // {
+    //     std::fprintf(FilePosition_left_d, "%d\n", census_left[i]);
+    //     std::fprintf(FilePosition_right_d, "%d\n", census_right[i]);
+    //     std::fprintf(FilePosition_left_X, "%08X\n", census_left[i]);
+    //     std::fprintf(FilePosition_right_X, "%08X\n", census_right[i]);
+    // }
+    // std::fclose(FilePosition_left_d);
+    // std::fclose(FilePosition_right_d);
+    // std::fclose(FilePosition_left_X);
+    // std::fclose(FilePosition_right_X);
+    // std::cout << "Writing Census Left and Right Finished!" << std::endl;
 
     // Save origin cost
-    std::FILE *FilePosition_cost_d;
-    std::FILE *FilePosition_cost_X;
-    std::string cost_init_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cost/cost_init_d.txt";
-    std::string cost_init_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cost/cost_init_X.txt";
-    FilePosition_cost_d = std::fopen(cost_init_d_txt.c_str(), "w");
-    FilePosition_cost_X = std::fopen(cost_init_X_txt.c_str(), "w");
-    std::cout << "Start Writing Census Left and Right..." << std::endl;
-    for (sint32 i = 0; i < height * width; i++)
-    {
-        for (sint32 j = 0; j < disp_range; j++)
-        {
-            if (j == disp_range - 1)
-            {
-                std::fprintf(FilePosition_cost_d, "%d\n", cost_init[i * disp_range + j]);
-                std::fprintf(FilePosition_cost_X, "%02X\n", cost_init[i * disp_range + j]);
-                continue;
-            }
-            std::fprintf(FilePosition_cost_d, "%d\t", cost_init[i * disp_range + j]);
-            std::fprintf(FilePosition_cost_X, "%02X\t", cost_init[i * disp_range + j]);
-        }
-    }
-    std::fclose(FilePosition_cost_d);
-    std::fclose(FilePosition_cost_X);
-    std::cout << "Writing Origin Cost Finished!" << std::endl;
+    // std::FILE *FilePosition_cost_d;
+    // std::FILE *FilePosition_cost_X;
+    // std::string cost_init_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cost/cost_init_d.txt";
+    // std::string cost_init_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/cost/cost_init_X.txt";
+    // FilePosition_cost_d = std::fopen(cost_init_d_txt.c_str(), "w");
+    // FilePosition_cost_X = std::fopen(cost_init_X_txt.c_str(), "w");
+    // std::cout << "Start Writing origin cost..." << std::endl;
+    // for (sint32 i = 0; i < height * width; i++)
+    // {
+    //     for (sint32 j = 0; j < disp_range; j++)
+    //     {
+    //         if (j == disp_range - 1)
+    //         {
+    //             std::fprintf(FilePosition_cost_d, "%d\n", cost_init[i * disp_range + j]);
+    //             std::fprintf(FilePosition_cost_X, "%02X\n", cost_init[i * disp_range + j]);
+    //             continue;
+    //         }
+    //         std::fprintf(FilePosition_cost_d, "%d\t", cost_init[i * disp_range + j]);
+    //         std::fprintf(FilePosition_cost_X, "%02X\t", cost_init[i * disp_range + j]);
+    //     }
+    // }
+    // std::fclose(FilePosition_cost_d);
+    // std::fclose(FilePosition_cost_X);
+    // std::cout << "Writing Origin Cost Finished!" << std::endl;
 
     // Save aggregation cost
-    std::FILE *FilePosition_aggr_lr_d;
-    std::FILE *FilePosition_aggr_rl_d;
-    std::FILE *FilePosition_aggr_lr_X;
-    std::FILE *FilePosition_aggr_rl_X;
-    std::string aggr_lr_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_lr_d.txt";
-    std::string aggr_rl_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_rl_d.txt";
-    std::string aggr_lr_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_lr_X.txt";
-    std::string aggr_rl_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_rl_X.txt";
-    FilePosition_aggr_lr_d = std::fopen(aggr_lr_d_txt.c_str(), "w");
-    FilePosition_aggr_rl_d = std::fopen(aggr_rl_d_txt.c_str(), "w");
-    FilePosition_aggr_lr_X = std::fopen(aggr_lr_X_txt.c_str(), "w");
-    FilePosition_aggr_rl_X = std::fopen(aggr_rl_X_txt.c_str(), "w");
-    std::cout << "Start Writing Census Left and Right..." << std::endl;
-    for (sint32 i = 0; i < height * width; i++)
-    {
-        for (sint32 j = 0; j < disp_range; j++)
-        {
-            if (j == disp_range - 1)
-            {
-                std::fprintf(FilePosition_aggr_lr_d, "%d\n", cost_aggr_lr[i * disp_range + j]);
-                std::fprintf(FilePosition_aggr_lr_X, "%08X\n", cost_aggr_lr[i * disp_range + j]);
-                std::fprintf(FilePosition_aggr_rl_d, "%d\n", cost_aggr_rl[i * disp_range + j]);
-                std::fprintf(FilePosition_aggr_rl_X, "%08X\n", cost_aggr_rl[i * disp_range + j]);
-                continue;
-            }
-            std::fprintf(FilePosition_aggr_lr_d, "%d\t", cost_aggr_lr[i * disp_range + j]);
-            std::fprintf(FilePosition_aggr_lr_X, "%08X\t", cost_aggr_lr[i * disp_range + j]);
-            std::fprintf(FilePosition_aggr_rl_d, "%d\t", cost_aggr_rl[i * disp_range + j]);
-            std::fprintf(FilePosition_aggr_rl_X, "%08X\t", cost_aggr_rl[i * disp_range + j]);
-        }
-    }
-    std::fclose(FilePosition_aggr_lr_d);
-    std::fclose(FilePosition_aggr_lr_X);
-    std::fclose(FilePosition_aggr_rl_d);
-    std::fclose(FilePosition_aggr_rl_X);
+    // std::FILE *FilePosition_aggr_lr_d;
+    // std::FILE *FilePosition_aggr_rl_d;
+    // std::FILE *FilePosition_aggr_lr_X;
+    // std::FILE *FilePosition_aggr_rl_X;
+    // std::string aggr_lr_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_lr_d.txt";
+    // std::string aggr_rl_d_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_rl_d.txt";
+    // std::string aggr_lr_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_lr_X.txt";
+    // std::string aggr_rl_X_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/aggr/aggr_rl_X.txt";
+    // FilePosition_aggr_lr_d = std::fopen(aggr_lr_d_txt.c_str(), "w");
+    // FilePosition_aggr_rl_d = std::fopen(aggr_rl_d_txt.c_str(), "w");
+    // FilePosition_aggr_lr_X = std::fopen(aggr_lr_X_txt.c_str(), "w");
+    // FilePosition_aggr_rl_X = std::fopen(aggr_rl_X_txt.c_str(), "w");
+    // std::cout << "Start Writing Census Left and Right..." << std::endl;
+    // for (sint32 i = 0; i < height * width; i++)
+    // {
+    //     for (sint32 j = 0; j < disp_range; j++)
+    //     {
+    //         if (j == disp_range - 1)
+    //         {
+    //             std::fprintf(FilePosition_aggr_lr_d, "%d\n", cost_aggr_lr[i * disp_range + j]);
+    //             std::fprintf(FilePosition_aggr_lr_X, "%08X\n", cost_aggr_lr[i * disp_range + j]);
+    //             std::fprintf(FilePosition_aggr_rl_d, "%d\n", cost_aggr_rl[i * disp_range + j]);
+    //             std::fprintf(FilePosition_aggr_rl_X, "%08X\n", cost_aggr_rl[i * disp_range + j]);
+    //             continue;
+    //         }
+    //         std::fprintf(FilePosition_aggr_lr_d, "%d\t", cost_aggr_lr[i * disp_range + j]);
+    //         std::fprintf(FilePosition_aggr_lr_X, "%08X\t", cost_aggr_lr[i * disp_range + j]);
+    //         std::fprintf(FilePosition_aggr_rl_d, "%d\t", cost_aggr_rl[i * disp_range + j]);
+    //         std::fprintf(FilePosition_aggr_rl_X, "%08X\t", cost_aggr_rl[i * disp_range + j]);
+    //     }
+    // }
+    // std::fclose(FilePosition_aggr_lr_d);
+    // std::fclose(FilePosition_aggr_lr_X);
+    // std::fclose(FilePosition_aggr_rl_d);
+    // std::fclose(FilePosition_aggr_rl_X);
 
     // Save my disparity
     std::FILE *FilePosition_my_disp;
