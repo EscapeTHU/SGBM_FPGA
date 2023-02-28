@@ -115,6 +115,8 @@ int main(int argv, char **argc)
     sgm_option.p2_init = 150;
     // 视差图填充
     sgm_option.is_fill_holes = false;
+    // 中值滤波
+    sgm_option.median_filter = false;
 
     // 定义SGM匹配类实例
     SemiGlobalMatching sgm;
@@ -202,46 +204,6 @@ int main(int argv, char **argc)
             }
         }
     }
-
-    // 保存结果txt
-    std::string disparity_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/disparity/disparity.txt";
-    std::string disparity_temp_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/disparity/disparity_temp.txt";
-    std::FILE *FilePosition;
-    std::FILE *FilePosition_temp;
-    FilePosition = std::fopen(disparity_txt.c_str(), "w");
-    FilePosition_temp = std::fopen(disparity_temp_txt.c_str(), "w");
-    std::cout << "Start Writing Disparity..." << std::endl;
-    for (sint32 i = 0; i < height; i++)
-    {
-        for (sint32 j = 0; j < width; j++)
-        {
-            // std::cout<<"Hello!"<<std::endl;
-            if (j == width - 1)
-            {
-                std::fprintf(FilePosition, "%f\n", disparity[i * width + j]);
-                std::fprintf(FilePosition_temp, "%f\n", disparity_temp[i * width + j]);
-            }
-            else
-            {
-                std::fprintf(FilePosition, "%f\t", disparity[i * width + j]);
-                std::fprintf(FilePosition_temp, "%f\t", disparity_temp[i * width + j]);
-            }
-        }
-    }
-    std::fclose(FilePosition);
-    std::fclose(FilePosition_temp);
-    std::cout << "Writing Disparity Finished!" << std::endl;
-
-    // Save my disparity
-    std::FILE *FilePosition_my_disp;
-    std::string my_disparity_txt = cwd_ + "awesome-sgbm/Data/FPGA_proc/my_disparity.txt";
-    FilePosition_my_disp = std::fopen(my_disparity_txt.c_str(), "w");
-    std::cout << "Start Writing My Disparity..." << std::endl;
-    for (sint32 i = 0; i < height * width; i++)
-    {
-        std::fprintf(FilePosition_my_disp, "%08X\n", my_disparity[i]);
-    }
-    std::fclose(FilePosition_my_disp);
 
     cv::namedWindow("视差图", 1);
     cv::namedWindow("视差图TEMP!", 1);

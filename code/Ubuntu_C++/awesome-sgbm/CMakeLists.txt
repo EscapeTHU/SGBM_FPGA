@@ -50,8 +50,12 @@ add_library(${SemiGlobal_LIBS} SHARED
     )
 
 add_executable(semi_global_matching src/main.cpp)
-# add_executable(rw_txt src/rw_txt.cpp)
-add_executable(cencus_in src/cencus_in.cpp)
+# 可将cpp仿真出的cost去掉每个像素位之间的空格，方便进入verilog仿真
+# add_executable(rw_txt src/simulation/rw_txt.cpp)
+# 读入verilog仿真生成的census l和r的txt文件，生成视差图，方便verilog cencus的仿真验证
+add_executable(cencus_in src/simulation/cencus_in.cpp)
+# 读入verilog仿真生成基于Hamming-Distance的原始代价的txt文件，生成视差图，方便verilog cencus的仿真验证
+# add_executable(cost_init_in src/simulation/cost_init_in.cpp)
 target_link_libraries(semi_global_matching ${SemiGlobal_LIBS} ${OpenCV_LIBS} ${PCL_LIBRARIES})
 target_link_libraries(cencus_in ${SemiGlobal_LIBS} ${OpenCV_LIBS} ${PCL_LIBRARIES})
 
