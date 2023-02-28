@@ -50,6 +50,9 @@ add_library(${SemiGlobal_LIBS} SHARED
     )
 
 add_executable(semi_global_matching src/main.cpp)
+# add_executable(rw_txt src/rw_txt.cpp)
+add_executable(cencus_in src/cencus_in.cpp)
 target_link_libraries(semi_global_matching ${SemiGlobal_LIBS} ${OpenCV_LIBS} ${PCL_LIBRARIES})
+target_link_libraries(cencus_in ${SemiGlobal_LIBS} ${OpenCV_LIBS} ${PCL_LIBRARIES})
 
 message("PROJECT_LIB_DIR : ${PROJECT_LIB_DIR}")

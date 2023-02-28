@@ -182,29 +182,29 @@ bool SemiGlobalMatching::Match(const uint8* img_left, const uint8* img_right, fl
     ComputeCost();
 
     // 代价聚合
-    CostAggregation();
+    // CostAggregation();
 
     // 视差计算
     ComputeDisparity();
-    ComputeDisparity_init();
+    // ComputeDisparity_init();
 
     // 左右一致性检查
-    if (option_.is_check_lr) {
-        // 视差计算（右影像）
-        ComputeDisparityRight();
-        // 一致性检查
-        LRCheck();
-    }
+    // if (option_.is_check_lr) {
+    //     // 视差计算（右影像）
+    //     ComputeDisparityRight();
+    //     // 一致性检查
+    //     LRCheck();
+    // }
 
-    // 移除小连通区
-    if (option_.is_remove_speckles) {
-        sgm_util::RemoveSpeckles(disp_left_, width_, height_, 1, option_.min_speckle_aera, Invalid_Float);
-    }
+    // // 移除小连通区
+    // if (option_.is_remove_speckles) {
+    //     sgm_util::RemoveSpeckles(disp_left_, width_, height_, 1, option_.min_speckle_aera, Invalid_Float);
+    // }
 
-    // 视差填充
-	if(option_.is_fill_holes) {
-		FillHolesInDispMap();
-	}
+    // // 视差填充
+	// if(option_.is_fill_holes) {
+	// 	FillHolesInDispMap();
+	// }
 
     // 中值滤波
     sgm_util::MedianFilter(disp_left_, disp_left_, width_, height_, 3);
@@ -215,6 +215,38 @@ bool SemiGlobalMatching::Match(const uint8* img_left, const uint8* img_right, fl
 
 	return true;
 }
+
+bool SemiGlobalMatching::Match(const uint32* cencus_left, const uint32* cencus_right, float32* disp_left, float32* disp_temp)
+{
+    if(!is_initialized_) {
+        return false;
+    }
+    if (cencus_left == nullptr || cencus_right == nullptr) {
+        return false;
+    }
+
+    // census变换
+    Cencus_in(cencus_left, cencus_right);
+    
+    // 代价计算
+    ComputeCost();
+
+    // 代价聚合
+    // CostAggregation();
+
+    // 视差计算
+    ComputeDisparity();
+
+    // 中值滤波
+    // sgm_util::MedianFilter(disp_left_, disp_left_, width_, height_, 3);
+
+    // 输出视差图
+    memcpy(disp_left, disp_left_, height_ * width_ * sizeof(float32));
+    memcpy(disp_temp, disp_temp_, height_ * width_ * sizeof(float32));
+
+	return true;
+}
+
 
 bool SemiGlobalMatching::Reset(const uint32& width, const uint32& height, const SGMOption& option)
 {
@@ -246,6 +278,12 @@ void SemiGlobalMatching::CensusTransform() const
     }
 }
 
+void SemiGlobalMatching::Cencus_in(const uint32* cencus_left, const uint32* cencus_right) const
+{
+    sgm_util::Cencus_in_assign(cencus_left, static_cast<uint32*>(census_left_), width_, height_);
+    sgm_util::Cencus_in_assign(cencus_right, static_cast<uint32*>(census_right_), width_, height_);
+}
+
 void SemiGlobalMatching::ComputeCost() const
 {
     const sint32& min_disparity = option_.min_disparity;
@@ -266,7 +304,7 @@ void SemiGlobalMatching::ComputeCost() const
                     cost = UINT8_MAX;
                     continue;
                 }
-                if (option_.census_size == Census5x5) {
+                if (option_.census_size == Census3x3 || option_.census_size == Census5x5) {
                     // 左影像census值
                     const auto& census_val_l = static_cast<uint32*>(census_left_)[i * width_ + j];
                     // 右影像对应像点的census值
@@ -332,10 +370,10 @@ void SemiGlobalMatching::CostAggregation() const
     // 把4/8个方向加起来
     for (sint32 i = 0; i < size; i++) {
         if (option_.num_paths == 4 || option_.num_paths == 8) {
-            // cost_aggr_[i] = cost_aggr_1_[i] + cost_aggr_2_[i] + cost_aggr_3_[i] + cost_aggr_4_[i];
+            cost_aggr_[i] = cost_aggr_1_[i] + cost_aggr_2_[i] + cost_aggr_3_[i] + cost_aggr_4_[i];
             // cost_aggr_[i] = cost_aggr_1_[i] + cost_aggr_2_[i];
             // std::cout<<"Hello!"<<std::endl;
-            cost_aggr_[i] = cost_aggr_1_[i];
+            // cost_aggr_[i] = cost_aggr_1_[i];
         }
         if (option_.num_paths == 8) {
             // std::cout<<"NO!"<<std::endl;
@@ -397,8 +435,8 @@ void SemiGlobalMatching::ComputeDisparity() const
     // 左影像视差图
     const auto disparity = disp_left_;
 	// 左影像聚合代价数组
-	const auto cost_ptr = cost_aggr_;
-	// const auto cost_ptr = cost_init_;
+	// const auto cost_ptr = cost_aggr_;
+	const auto cost_ptr = cost_init_;
 	
 	const auto my_disparity = disp_my_;
 
@@ -427,32 +465,32 @@ void SemiGlobalMatching::ComputeDisparity() const
                 }
             }
 
-            if (is_check_unique) {
-                // 再遍历一次，输出次最小代价值
-                for (sint32 d = min_disparity; d < max_disparity; d++) {
-                    if (d == best_disparity) {
-                        // 跳过最小代价值
-                        continue;
-                    }
-                    const auto& cost = cost_local[d - min_disparity];
-                    sec_min_cost = std::min(sec_min_cost, cost);
-                }
+            // if (is_check_unique) {
+            //     // 再遍历一次，输出次最小代价值
+            //     for (sint32 d = min_disparity; d < max_disparity; d++) {
+            //         if (d == best_disparity) {
+            //             // 跳过最小代价值
+            //             continue;
+            //         }
+            //         const auto& cost = cost_local[d - min_disparity];
+            //         sec_min_cost = std::min(sec_min_cost, cost);
+            //     }
 
-                // 判断唯一性约束
-                // 若(min-sec)/min < min*(1-uniquness)，则为无效估计
-                if (sec_min_cost - min_cost <= static_cast<uint16>(min_cost * (1 - uniqueness_ratio))) {
-                    disparity[i * width + j] = Invalid_Float;
-                    my_disparity[i * width + j] = UINT32_MAX;
-                    continue;
-                }
-            }
+            //     // 判断唯一性约束
+            //     // 若(min-sec)/min < min*(1-uniquness)，则为无效估计
+            //     if (sec_min_cost - min_cost <= static_cast<uint16>(min_cost * (1 - uniqueness_ratio))) {
+            //         disparity[i * width + j] = Invalid_Float;
+            //         my_disparity[i * width + j] = UINT32_MAX;
+            //         continue;
+            //     }
+            // }
 
             // ---子像素拟合
-            if (best_disparity == min_disparity || best_disparity == max_disparity - 1) {
-                disparity[i * width + j] = Invalid_Float;
-                my_disparity[i * width + j] = UINT32_MAX;
-                continue;
-            }
+            // if (best_disparity == min_disparity || best_disparity == max_disparity - 1) {
+            //     disparity[i * width + j] = Invalid_Float;
+            //     my_disparity[i * width + j] = UINT32_MAX;
+            //     continue;
+            // }
             // 最优视差前一个视差的代价值cost_1，后一个视差的代价值cost_2
             const sint32 idx_1 = best_disparity - 1 - min_disparity;
             const sint32 idx_2 = best_disparity + 1 - min_disparity;

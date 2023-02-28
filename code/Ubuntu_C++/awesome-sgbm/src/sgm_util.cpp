@@ -9,6 +9,19 @@
 #include <queue>
 #include <iostream>
 
+void sgm_util::Cencus_in_assign(const uint32* source, uint32* census, const sint32& width, const sint32& height)
+{
+	std::cout<<"cencus in ,  assign to cencus_ in project"<<std::endl;
+	if (source == nullptr || census == nullptr || width <= 3 || height <= 3) {
+		return;
+	}
+
+	// 赋值
+	for (sint32 i = 0; i < width * height; i++) {
+		census[i] = source[i];
+	}
+}
+
 void sgm_util::census_transform_3x3(const uint8* source, uint32* census, const sint32& width,
 	const sint32& height)
 {

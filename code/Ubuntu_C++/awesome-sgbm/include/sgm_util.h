@@ -23,6 +23,7 @@ namespace sgm_util
 	 * \param width		输入，影像宽
 	 * \param height	输入，影像高
 	 */
+	void Cencus_in_assign(const uint32* source, uint32* census, const sint32& width, const sint32& height);
 	void census_transform_3x3(const uint8* source, uint32* census, const sint32& width, const sint32& height);
 	void census_transform_5x5(const uint8* source, uint32* census, const sint32& width, const sint32& height);
 	void census_transform_7x7(const uint8* source, uint64* census, const sint32& width, const sint32& height);

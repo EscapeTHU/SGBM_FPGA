@@ -73,6 +73,7 @@ public:
 	 * \param disp_temp    输出，cost_init影像视差图指针，预先分配和影像等尺寸的内存空间
 	 */
 	bool Match(const uint8* img_left, const uint8* img_right, float32* disp_left, float32* disp_temp);
+	bool Match(const uint32* cencus_left, const uint32* cencus_right, float32* disp_left, float32* disp_temp);
 
 	/**
 	 * \brief 重设
@@ -126,6 +127,9 @@ private:
 
 	/** \brief 内存释放	 */
 	void Release();
+
+	/** \brief 输入cencus	 */
+	void Cencus_in(const uint32* cencus_left, const uint32* cencus_right) const;
 
 private:
 	/** \brief SGM参数	 */
