@@ -186,28 +186,31 @@ bool SemiGlobalMatching::Match(const uint8* img_left, const uint8* img_right, fl
 
     // 视差计算
     ComputeDisparity();
-    // ComputeDisparity_init();
+    ComputeDisparity_init();
 
     // 左右一致性检查
-    // if (option_.is_check_lr) {
-    //     // 视差计算（右影像）
-    //     ComputeDisparityRight();
-    //     // 一致性检查
-    //     LRCheck();
-    // }
+    if (option_.is_check_lr) {
+        // 视差计算（右影像）
+        ComputeDisparityRight();
+        // 一致性检查
+        LRCheck();
+    }
 
-    // // 移除小连通区
-    // if (option_.is_remove_speckles) {
-    //     sgm_util::RemoveSpeckles(disp_left_, width_, height_, 1, option_.min_speckle_aera, Invalid_Float);
-    // }
+    // 移除小连通区
+    if (option_.is_remove_speckles) {
+        sgm_util::RemoveSpeckles(disp_left_, width_, height_, 1, option_.min_speckle_aera, Invalid_Float);
+    }
 
-    // // 视差填充
-	// if(option_.is_fill_holes) {
-	// 	FillHolesInDispMap();
-	// }
+    // 视差填充
+	if(option_.is_fill_holes) {
+		FillHolesInDispMap();
+	}
 
     // 中值滤波
-    sgm_util::MedianFilter(disp_left_, disp_left_, width_, height_, 3);
+    if (option_.median_filter)
+    {
+        sgm_util::MedianFilter(disp_left_, disp_left_, width_, height_, 3);
+    } 
 
     // 输出视差图
     memcpy(disp_left, disp_left_, height_ * width_ * sizeof(float32));

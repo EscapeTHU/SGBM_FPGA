@@ -43,6 +43,7 @@ public:
 		int		min_speckle_aera;	// 最小的连通区面积（像素数）
 
 		bool	is_fill_holes;		// 是否填充视差空洞
+		bool	median_filter;		// 是否中值滤波
 
 		// P1,P2 
 		// P2 = P2_init / (Ip-Iq)
@@ -54,6 +55,7 @@ public:
 		             is_check_lr(true), lrcheck_thres(1.0f),
 		             is_remove_speckles(true), min_speckle_aera(20),
 		             is_fill_holes(true),
+		             median_filter(true),
 		             p1(10), p2_init(150) { }
 	};
 public:
