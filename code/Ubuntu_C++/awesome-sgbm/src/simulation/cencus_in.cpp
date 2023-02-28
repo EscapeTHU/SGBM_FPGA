@@ -137,87 +137,20 @@ int main(int argv, char **argc)
         return -2;
     }
 
-    // Fetch my disparity
-    auto my_disparity = new uint32[uint32(width * height)]();
-    if (!sgm.GetDisparity(my_disparity))
-    {
-        std::cout << "GetMyDisparity Failed!" << std::endl;
-    }
-
-    // 显示视差图
     cv::Mat disp_mat = cv::Mat(height, width, CV_8UC1);
-    float min_disp = width, max_disp = -width;
-    for (sint32 i = 0; i < height; i++)
+    if (!sgm.ShowDisparityImage(disp_mat, disparity))
     {
-        for (sint32 j = 0; j < width; j++)
-        {
-            const float32 disp = disparity[i * width + j];
-            if (disp != Invalid_Float)
-            {
-                min_disp = std::min(min_disp, disp);
-                max_disp = std::max(max_disp, disp);
-            }
-        }
-    }
-    for (sint32 i = 0; i < height; i++)
-    {
-        for (sint32 j = 0; j < width; j++)
-        {
-            const float32 disp = disparity[i * width + j];
-            if (disp == Invalid_Float)
-            {
-                disp_mat.data[i * width + j] = 0;
-            }
-            else
-            {
-                disp_mat.data[i * width + j] = static_cast<uchar>((disp - min_disp) / (max_disp - min_disp) * 255);
-            }
-        }
-    }
-
-    cv::Mat disp_temp_mat = cv::Mat(height, width, CV_8UC1);
-    float min_disp_temp = width, max_disp_temp = -width;
-    for (sint32 i = 0; i < height; i++)
-    {
-        for (sint32 j = 0; j < width; j++)
-        {
-            const float32 disp_temp = disparity_temp[i * width + j];
-            if (disp_temp != Invalid_Float)
-            {
-                min_disp_temp = std::min(min_disp_temp, disp_temp);
-                max_disp_temp = std::max(max_disp_temp, disp_temp);
-            }
-        }
-    }
-    for (sint32 i = 0; i < height; i++)
-    {
-        for (sint32 j = 0; j < width; j++)
-        {
-            const float32 disp_temp = disparity_temp[i * width + j];
-            if (disp_temp == Invalid_Float)
-            {
-                disp_temp_mat.data[i * width + j] = 0;
-            }
-            else
-            {
-                disp_temp_mat.data[i * width + j] = static_cast<uchar>((disp_temp - min_disp_temp) / (max_disp_temp - min_disp_temp) * 255);
-            }
-        }
+        std::cout << "视差图获取失败！" << std::endl;
+        return -2;
     }
 
     cv::namedWindow("视差图", 1);
-    cv::namedWindow("视差图TEMP!", 1);
     cv::namedWindow("视差图-伪彩", 1);
-    cv::namedWindow("视差图-伪彩TEMP!", 1);
     cv::imshow("视差图", disp_mat);
-    cv::imshow("视差图TEMP!", disp_temp_mat);
 
     cv::Mat disp_color;
     applyColorMap(disp_mat, disp_color, cv::COLORMAP_JET);
     cv::imshow("视差图-伪彩", disp_color);
-    cv::Mat disp_temp_color;
-    applyColorMap(disp_temp_mat, disp_temp_color, cv::COLORMAP_JET);
-    cv::imshow("视差图-伪彩TEMP!", disp_temp_color);
 
     // 保存结果bmp
     std::string disp_map_path = "./Data/cone_big/census_in";

@@ -5,6 +5,7 @@
 #pragma once
 
 #include "sgm_types.h"
+#include <opencv2/opencv.hpp>
 #include <vector>
 
 /**
@@ -101,6 +102,8 @@ public:
         bool GetAggrCost(uint8* cost_aggr, int sign);
         
         bool GetDisparity(uint32* disp_left);
+
+        bool ShowDisparityImage(cv::Mat &disp_mat, float32* disp_left);
 private:
 
 	/** \brief Census变换 */

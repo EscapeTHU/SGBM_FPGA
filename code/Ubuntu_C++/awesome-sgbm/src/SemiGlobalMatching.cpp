@@ -158,6 +158,43 @@ bool SemiGlobalMatching::GetDisparity(uint32* my_disp)
     return true;
 }
 
+bool SemiGlobalMatching::ShowDisparityImage(cv::Mat &disp_mat, float32* disp_left){
+    if (!is_initialized_) {
+        return false;
+    }
+    // 显示视差图
+    float min_disp = width_;
+    float max_disp = -width_;
+    for (sint32 i = 0; i < height_; i++)
+    {
+        for (sint32 j = 0; j < width_; j++)
+        {
+            const float32 disp = disp_left[i * width_ + j];
+            if (disp != Invalid_Float)
+            {
+                min_disp = std::min(min_disp, disp);
+                max_disp = std::max(max_disp, disp);
+            }
+        }
+    }
+    for (sint32 i = 0; i < width_; i++)
+    {
+        for (sint32 j = 0; j < width_; j++)
+        {
+            const float32 disp = disp_left[i * width_ + j];
+            if (disp == Invalid_Float)
+            {
+                disp_mat.data[i * width_ + j] = 0;
+            }
+            else
+            {
+                disp_mat.data[i * width_ + j] = static_cast<uchar>((disp - min_disp) / (max_disp - min_disp) * 255);
+            }
+        }
+    }
+    return true;
+}
+
 bool SemiGlobalMatching::Match(const uint8* img_left, const uint8* img_right, float32* disp_left, float32* disp_temp)
 {
     if(!is_initialized_) {
