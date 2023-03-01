@@ -277,8 +277,29 @@ bool SemiGlobalMatching::Match(const uint32* cencus_left, const uint32* cencus_r
     // 视差计算
     ComputeDisparity();
 
+    // 左右一致性检查
+    if (option_.is_check_lr) {
+        // 视差计算（右影像）
+        ComputeDisparityRight();
+        // 一致性检查
+        LRCheck();
+    }
+
+    // 移除小连通区
+    if (option_.is_remove_speckles) {
+        sgm_util::RemoveSpeckles(disp_left_, width_, height_, 1, option_.min_speckle_aera, Invalid_Float);
+    }
+
+    // 视差填充
+	if(option_.is_fill_holes) {
+		FillHolesInDispMap();
+	}
+
     // 中值滤波
-    // sgm_util::MedianFilter(disp_left_, disp_left_, width_, height_, 3);
+    if (option_.median_filter)
+    {
+        sgm_util::MedianFilter(disp_left_, disp_left_, width_, height_, 3);
+    } 
 
     // 输出视差图
     memcpy(disp_left, disp_left_, height_ * width_ * sizeof(float32));
@@ -505,32 +526,32 @@ void SemiGlobalMatching::ComputeDisparity() const
                 }
             }
 
-            // if (is_check_unique) {
-            //     // 再遍历一次，输出次最小代价值
-            //     for (sint32 d = min_disparity; d < max_disparity; d++) {
-            //         if (d == best_disparity) {
-            //             // 跳过最小代价值
-            //             continue;
-            //         }
-            //         const auto& cost = cost_local[d - min_disparity];
-            //         sec_min_cost = std::min(sec_min_cost, cost);
-            //     }
+            if (is_check_unique) {
+                // 再遍历一次，输出次最小代价值
+                for (sint32 d = min_disparity; d < max_disparity; d++) {
+                    if (d == best_disparity) {
+                        // 跳过最小代价值
+                        continue;
+                    }
+                    const auto& cost = cost_local[d - min_disparity];
+                    sec_min_cost = std::min(sec_min_cost, cost);
+                }
 
-            //     // 判断唯一性约束
-            //     // 若(min-sec)/min < min*(1-uniquness)，则为无效估计
-            //     if (sec_min_cost - min_cost <= static_cast<uint16>(min_cost * (1 - uniqueness_ratio))) {
-            //         disparity[i * width + j] = Invalid_Float;
-            //         my_disparity[i * width + j] = UINT32_MAX;
-            //         continue;
-            //     }
-            // }
+                // 判断唯一性约束
+                // 若(min-sec)/min < min*(1-uniquness)，则为无效估计
+                if (sec_min_cost - min_cost <= static_cast<uint16>(min_cost * (1 - uniqueness_ratio))) {
+                    disparity[i * width + j] = Invalid_Float;
+                    my_disparity[i * width + j] = UINT32_MAX;
+                    continue;
+                }
+            }
 
             // ---子像素拟合
-            // if (best_disparity == min_disparity || best_disparity == max_disparity - 1) {
-            //     disparity[i * width + j] = Invalid_Float;
-            //     my_disparity[i * width + j] = UINT32_MAX;
-            //     continue;
-            // }
+            if (best_disparity == min_disparity || best_disparity == max_disparity - 1) {
+                disparity[i * width + j] = Invalid_Float;
+                my_disparity[i * width + j] = UINT32_MAX;
+                continue;
+            }
             // 最优视差前一个视差的代价值cost_1，后一个视差的代价值cost_2
             const sint32 idx_1 = best_disparity - 1 - min_disparity;
             const sint32 idx_2 = best_disparity + 1 - min_disparity;

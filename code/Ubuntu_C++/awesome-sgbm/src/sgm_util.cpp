@@ -86,6 +86,30 @@ void sgm_util::census_transform_5x5(const uint8* source, uint32* census, const s
 			census[i * width + j] = census_val;		
 		}
 	}
+
+		// 逐像素计算census值
+	// for (sint32 i = 4; i < height ; i++) {
+	// 	for (sint32 j = 4; j < width ; j++) {
+			
+	// 		// 中心像素值
+	// 		const uint8 gray_center = source[(i - 2) * width + (j - 2)];
+			
+	// 		// 遍历大小为5x5的窗口内邻域像素，逐一比较像素值与中心像素值的的大小，计算census值
+	// 		uint32 census_val = 0u;
+	// 		for (sint32 r = -2; r <= 2; r++) {
+	// 			for (sint32 c = -2; c <= 2; c++) {
+	// 				census_val <<= 1;
+	// 				const uint8 gray = source[(i + r) * width + (j - 2) + c];
+	// 				if (gray < gray_center) {
+	// 					census_val += 1;
+	// 				}
+	// 			}
+	// 		}
+
+	// 		// 中心像素的census值
+	// 		census[i * width + j] = census_val;		
+	// 	}
+	// }
 }
 
 void sgm_util::census_transform_7x7(const uint8* source, uint64* census, const sint32& width,
